@@ -3,53 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+
+    <!-- ALTERAÇÃO DA AULA 4:
+         O título da aba continua simples por enquanto.
+         CSS será trabalhado em aulas posteriores. -->
+    <title>Meu Portfólio</title>
 </head>
+
 <body>
+
+    <!-- =========================================================
+         AULA 4 — TÍTULO PRINCIPAL
+         Antes: provavelmente havia apenas um texto ou título simples.
+         Agora usamos <h1> para indicar o título principal da página.
+         ========================================================= -->
     <h1>Meu Portifólio</h1>
-    <h2>Sobre Mim</h2>
-<br>
-<p>
-    Me chamo <strong>Paulina Perdiza</strong>, e estou no 2º semestre do curso de <em>Gestão de Ti</em> da FATEC.
-    <br>Nesta página estou aprendendo a estruturar uma página web com o professor Ed.
-</p>
-
-<p>
-    Site da FATEC: <a href="http://www.fateccampinas.edu.br" target="_blank">Fatec Campinas</a>
-    <!--textos após tag "!--" são comentários dentro do código que não irão imprimir na página web. -->
-    <!--Aula do dia 14ago2026-->
-</p>
-<p>
-    Para abrir uma conta no GitHub, acesse: <a href="https://github.com/" target="_blank">GitHub</a>
-</p>
-<hr>
 
 
-<p>
-    <h2>O que estou aprendendo no momento:</h2> <!--h2 abre um titulo secundário-->
+    <!-- =========================================================
+         AULA 5 — IMAGEM DE PERFIL
+         <img> insere uma imagem na página. Não tem tag de fechamento.
+
+         src  = caminho até o arquivo. Aqui é um caminho RELATIVO:
+                a imagem fica dentro da pasta "images/", criada
+                nesta aula, ao lado do index.html.
+         alt  = texto alternativo. Aparece se a imagem não carregar
+                e é lido por leitor de tela — não é opcional.
+         width/height = tamanho da imagem, evita que a página
+                "pule" enquanto a imagem carrega.
+         ========================================================= -->
+    <img src="images/git.webp" alt="foto de perfil" width="200" height="200">
+
+
+    <!-- =========================================================
+         AULA 4 — PARÁGRAFO
+         <h2> cria um título de segundo nível.
+         <p> cria um parágrafo.
+         ========================================================= -->
+    <h2>Sobre mim</h2>
+
+    <p>
+        Olá! Meu nome é Paulina.
+        Sou estudante e estou aprendendo desenvolvimento web
+        na disciplina de Linguagens de Programação.
+    </p>
+
+
+    <!-- =========================================================
+         AULA 4 — OUTRO PARÁGRAFO
+         O objetivo é mostrar que vários parágrafos podem existir
+         dentro da mesma seção.
+         ========================================================= -->
+    <p>
+        Nesta página estou aprendendo a utilizar HTML para
+        estruturar e organizar o conteúdo de uma página web.
+    </p>
+
+
+    <!-- =========================================================
+         AULA 4 — LISTA NÃO ORDENADA
+         <ul> = unordered list (lista não ordenada)
+         <li> = list item (item da lista)
+         ========================================================= -->
+    <h2>O que estou aprendendo:</h2>
+
     <ul>
-<li>HTML</li>
-<li>Github</li>
-<li>GitPages</li>
-</ul>
-</p>
+        <li>HTML</li>
+        <li>GitHub</li>
+        <li>GitHub Pages</li>
+    </ul>
 
-    <br>
-    <br>
-    <br>
-    <br>
-<p>
-    <h2>Objetivos:</h2>
+
+    <!-- =========================================================
+         AULA 4 — LISTA ORDENADA
+         <ol> = ordered list (lista ordenada)
+         <li> = item da lista
+         ========================================================= -->
+    <h2>Meus objetivos:</h2>
+
     <ol>
-<li>Aprender HTML</li>
-<li>Aprender CSS</li>
-<li>Aprender JavaScript</li>
+        <li>Aprender HTML</li>
+        <li>Aprender CSS</li>
+        <li>Aprender JavaScript</li>
     </ol>
 
-</p>
 
-<br>
-<hr>
+    <!-- =========================================================
+         AULA 5 — ORGANIZANDO CONTEÚDO COM <div>
+         <div> é uma caixa genérica que agrupa conteúdo relacionado.
+         Ainda não tem significado próprio (isso vem na próxima aula
+         com <header>, <main> e <footer>) — por enquanto serve só
+         pra juntar título + imagem + texto de um mesmo projeto
+         num único bloco.
+         ========================================================= -->
+    <h2>Meus projetos</h2>
+
+    <div>
+        <h3>Projeto 1</h3>
+        <img src="images/print_projeto.jpg" alt="Captura de tela da página inicial do projeto 1" width="400" height="250">
+        <p>
+            Descrição breve do projeto: Exercício feito em sala de aula, utilizando o VS Code para escrever em HTML5.
+            <br> Aprendemos hoje sobre como adicionar imagens à página, e como usar a tag "&ltdiv&gt".
+        </p>
+    </div>
+
+
+    <!-- =========================================================
+         AULA 4 — LINKS
+         <a> cria um link.
+         href contém o endereço para onde o link aponta.
+         target="_blank" abre o destino em uma nova aba.
+         ========================================================= -->
+    <h2>Links</h2>
+
+    <p>
+        <a href="https://github.com/perdiza" target="_blank">
+            Meu GitHub
+        </a>
+    </p>
+
+
+    <!-- =========================================================
+         AULA 4 — MAIS UM LINK
+         Este segundo exemplo mostra que podemos ter vários links
+         dentro da mesma área da página.
+         ========================================================= -->
+    <p>
+        <a href="https://www.fateccampinas.com.br" target="_blank">
+            Fatec Campinas
+        </a>
+    </p>
+
+
+    <!-- =========================================================
+         DESAFIO DA AULA 5
+         O aluno deverá, durante a atividade prática:
+
+         - criar a pasta "images/" ao lado deste index.html;
+         - colocar dentro dela uma foto sua (ex.: foto-perfil.jpg)
+           e ao menos uma imagem/captura de tela de um projeto;
+         - trocar "foto-perfil.jpg" e "projeto1.png" pelos nomes
+           reais dos arquivos que ele adicionou;
+         - escrever um alt descritivo pra cada imagem (não pode
+           ficar em branco nem genérico como "imagem1");
+         - duplicar o bloco <div> de "Meus projetos" se quiser
+           mostrar mais de um projeto;
+         - testar a página publicada e confirmar que as imagens
+           aparecem (caminho relativo correto).
+
+         IMPORTANTE:
+         Nesta aula os alunos ainda NÃO aprenderam Git/commit.
+         A atualização será feita pelo upload/substituição do
+         arquivo (e da nova pasta images/) diretamente pelo GitHub,
+         como na aula anterior.
+         ========================================================= -->
 
 </body>
 </html>
